@@ -26,6 +26,8 @@ button {
   padding: 0.8rem 3.2rem;
   border-radius: 25px;
   color: hsl(257, 40%, 49%);
+  cursor: pointer;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
 .container {
@@ -60,5 +62,56 @@ header img {
 
 .content .right p {
   font-family: "Open Sans", sans-serif;
-  opacity: 0.8;
+  opacity: 0.9;
+}
+
+.socials {
+  text-align: end;
+}
+
+.socials i {
+  border: 1.5px solid white;
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  header img {
+    margin: 2rem;
+  }
+  .container {
+    width: 100%;
+    max-width: 450px;
+    margin: 1.3rem 0.2rem;
+  }
+  .content {
+    flex-direction: column;
+    margin: 0;
+    text-align: center;
+  }
+  .content .left img {
+    width: 350px;
+    margin: 2rem 0.8rem;
+  }
+  .content .right {
+    margin: 0 1rem;
+  }
+  .content .right h1 {
+    font-size: 26px;
+  }
+  .content .right p {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .socials {
+    text-align: center;
+    margin: 3rem 0;
+  }
 }
